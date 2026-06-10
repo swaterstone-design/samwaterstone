@@ -5,8 +5,8 @@
 }
 
 :root {
-    --teal: #0D7B8F;
-    --purple: #A855F7;
+    --teal: #1ABBC4;
+    --purple: #D4C5F9;
     --coral: #E85D3F;
     --navy: #1a1a1a;
     --white: #ffffff;
@@ -28,7 +28,10 @@ body {
 
 /* Navigation */
 .nav {
-    background: var(--teal);
+    background-color: var(--teal);
+    background-image: 
+        radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
     box-shadow: 0 4px 12px rgba(13, 123, 143, 0.15);
     position: sticky;
     top: 0;
@@ -72,7 +75,10 @@ body {
 /* Hero Section */
 .hero {
     padding: 5rem 2rem;
-    background: linear-gradient(135deg, #0D7B8F 0%, #1a5f73 50%, #E85D3F 100%);
+    background-color: var(--teal);
+    background-image: 
+        radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -85,7 +91,7 @@ body {
     right: -10%;
     width: 400px;
     height: 400px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -226,6 +232,42 @@ body {
     color: var(--text);
     line-height: 1.7;
 }
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.expertise-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.expertise-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(26, 187, 196, 0.15);
+}
+
+.expertise-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.expertise-item p {
+    margin: 0;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.service-list {
     list-style: none;
     margin: 1.5rem 0 2rem 0;
     display: grid;
@@ -409,7 +451,10 @@ body {
 
 /* Writing Header */
 .writing-header {
-    background: linear-gradient(135deg, var(--purple) 0%, #8b5cf6 100%);
+    background-color: var(--purple);
+    background-image: 
+        radial-gradient(circle, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+    background-size: 30px 30px;
     color: var(--white);
 }
 
@@ -423,6 +468,15 @@ body {
 .writing-header .section-lead {
     color: var(--white);
     font-size: 1.15rem;
+}
+
+/* Blog Header */
+.blog-header {
+    background-color: var(--teal);
+    background-image: 
+        radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+    color: var(--white);
 }
 
 .blog-header h1 {
