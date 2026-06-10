@@ -13,8 +13,14 @@
             <a href="#home" class="nav-logo">Sam Waterstone</a>
             <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
-                <li><a href="blog.html">Writing</a></li>
-                <li><a href="#consulting">Consulting</a></li>
+                <li class="dropdown">
+                    <a href="#">Writing</a>
+                    <div class="dropdown-content">
+                        <a href="writing.html">Portfolio</a>
+                        <a href="blog.html">Blog</a>
+                    </div>
+                </li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="https://www.linkedin.com/in/samwaterstone/" target="_blank">LinkedIn</a></li>
             </ul>
         </div>
@@ -35,29 +41,76 @@
             <h2>About</h2>
             <p>With a background in both domestic philanthropy and international development – as well as deep experience in the sports industry – I'm passionate about leveraging strategic communications and purpose-driven partnerships to support programs that drive meaningful social change.</p>
             <p>As a communications specialist, development strategist, and nonprofit operations leader, I work at the intersection of mission and message. I design equitable solutions to complex social issues, mobilize resources from values-aligned individuals and institutions, and elevate the stories that inspire collective action.</p>
-            <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--light-gray);">
-                <a href="about.html" style="display: inline-block; padding: 0.9rem 1.8rem; background: var(--purple); color: white; text-decoration: none; border-radius: 4px; font-weight: 600; transition: all 0.2s ease;" onmouseover="this.style.background='var(--teal)'" onmouseout="this.style.background='var(--purple)'">Read Full Bio →</a>
+            <div style="text-align: center; margin-top: 2rem; padding-top: 2rem;">
+                <a href="about.html" style="display: inline-block; padding: 0.9rem 1.8rem; background: var(--amber); color: white; text-decoration: none; border-radius: 4px; font-weight: 600; transition: all 0.2s ease;" onmouseover="this.style.background='var(--teal)'" onmouseout="this.style.background='var(--amber)'">Read Full Bio →</a>
             </div>
         </div>
     </section>
 
-    <!-- Consulting Section -->
-    <section id="consulting" class="section consulting">
+    <!-- Writing Section -->
+    <section id="writing" class="section writing">
         <div class="container">
-            <h2>Consulting & Partnerships</h2>
+            <h2>Featured Writing</h2>
+            <p class="section-lead">Storytelling focused on philanthropy, international development, and social justice</p>
+            
+            <article class="article">
+                <h3><a href="blog-post-1.html" style="color: var(--teal); text-decoration: none;">Marin Voice: Queer moms instilled a superpower of LGBTQ+ advocacy</a></h3>
+                <p class="article-meta">June 5, 2025 | Marin Independent Journal</p>
+                <p class="article-excerpt">In 1990s San Francisco, my mothers joined a small but mighty group of queer women making history by embarking on the journey of motherhood. Nearly three decades later, I recognize that my upbringing was a gift, maybe even my superpower.</p>
+                <a href="blog-post-1.html" class="read-more">Read Full Article →</a>
+            </article>
+
+            <article class="article">
+                <h3><a href="blog-post-2.html" style="color: var(--teal); text-decoration: none;">Shooting Touch Blog #5: Snippets From My Year in Rwanda</a></h3>
+                <p class="article-meta">September 9, 2022 | Shooting Touch</p>
+                <p class="article-excerpt">I still haven't quite wrapped my head around it all - leaving Rwanda, working at BWB, traveling, returning home - but at the moment, I just feel immense gratitude for the chance to explore the world.</p>
+                <a href="blog-post-2.html" class="read-more">Read Full Article →</a>
+            </article>
+
+            <article class="article">
+                <h3><a href="blog-post-3.html" style="color: var(--teal); text-decoration: none;">Shooting Touch Blog #4: Whirlwind</a></h3>
+                <p class="article-meta">June 4, 2022 | Shooting Touch</p>
+                <p class="article-excerpt">In a given week, you'll find me driving around Rwanda in an old broken-down Rav4 that was imported from Ottawa, meeting fascinating people from all over the world.</p>
+                <a href="blog-post-3.html" class="read-more">Read Full Article →</a>
+            </article>
+
+            <article class="article">
+                <h3><a href="blog-post-4.html" style="color: var(--teal); text-decoration: none;">Shooting Touch Blog #3: This Isn't About Me</a></h3>
+                <p class="article-meta">March 24, 2022 | Shooting Touch</p>
+                <p class="article-excerpt">This isn't about me. Or any of the Shooting Touch Rwanda Fellows, or even Shooting Touch. It's about the women who have to strategize every day in order to survive.</p>
+                <a href="blog-post-4.html" class="read-more">Read Full Article →</a>
+            </article>
+
+            <article class="article">
+                <h3><a href="blog-post-5.html" style="color: var(--teal); text-decoration: none;">Shooting Touch Blog #2: Change of Pace</a></h3>
+                <p class="article-meta">February 11, 2022 | Shooting Touch</p>
+                <p class="article-excerpt">When I arrived in Kigali on January 10, basketball was still banned, and Shooting Touch courts were empty. I had no idea when the regulations might shift in our favor.</p>
+                <a href="blog-post-5.html" class="read-more">Read Full Article →</a>
+            </article>
+
+            <div style="text-align: center; margin-top: 3rem; padding-top: 2rem;">
+                <a href="writing.html" style="display: inline-block; padding: 0.9rem 1.8rem; background: var(--amber); color: white; text-decoration: none; border-radius: 4px; font-weight: 600; transition: all 0.2s ease;" onmouseover="this.style.background='var(--teal)'" onmouseout="this.style.background='var(--amber)'">Explore Full Writing Portfolio →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section consulting">
+        <div class="container">
+            <h2>Experience</h2>
             <p class="section-lead">I've had the privilege of working with mission-driven organizations across multiple sectors.</p>
             
             <h3>Organizations I've Worked With</h3>
 
             <article class="service-item">
                 <h4>Mount Tamalpais College</h4>
-                <p>Communications Manager. Leading messaging and storytelling efforts to expand access to higher education for incarcerated individuals at San Quentin Rehabilitation Center.</p>
+                <p>Leading messaging and storytelling efforts to expand access to higher education for incarcerated individuals at San Quentin Rehabilitation Center.</p>
                 <a href="https://www.mttamcollege.edu/" target="_blank" class="read-more">Learn More →</a>
             </article>
 
             <article class="service-item">
                 <h4>Shooting Touch</h4>
-                <p>Director of Communications. An international sport-for-development nonprofit with programs in the United States and East Africa, utilizing basketball to improve public health, gender equality, and upward mobility for youth and their families.</p>
+                <p>An international sport-for-development nonprofit with programs in the United States and East Africa, utilizing basketball to improve public health, gender equality, and upward mobility for youth and their families.</p>
                 <a href="https://www.shootingtouch.com/" target="_blank" class="read-more">Learn More →</a>
             </article>
 
@@ -97,54 +150,6 @@
                     <span class="expertise-icon">🤝</span>
                     <p>Partnership Development</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Writing Section -->
-    <section id="writing" class="section writing">
-        <div class="container">
-            <h2>Featured Writing</h2>
-            <p class="section-lead">Storytelling focused on philanthropy, international development, and social justice</p>
-            
-            <article class="article">
-                <h3><a href="https://www.marinij.com/2025/06/04/marin-voice-queer-moms-instilled-a-superpower-of-lgbtq-advocacy/" target="_blank" style="color: var(--teal); text-decoration: none;">Marin Voice: Queer moms instilled a superpower of LGBTQ+ advocacy</a></h3>
-                <p class="article-meta">June 5, 2025 | Marin Independent Journal</p>
-                <p class="article-excerpt">In 1990s San Francisco, my mothers joined a small but mighty group of queer women making history by embarking on the journey of motherhood. Nearly three decades later, I recognize that my upbringing was a gift, maybe even my superpower.</p>
-                <p>Read an abridged version of my foreword for <a href="https://www.goodreads.com/book/show/230447041-boyhood-reimagined" target="_blank" class="read-more">Boyhood Reimagined: Stories of Queer Moms Raising Sons</a>, an anthology released in June 2025 highlighting the experiences and ambitions of lesbian mothers — including my own family.</p>
-                <a href="https://www.marinij.com/2025/06/04/marin-voice-queer-moms-instilled-a-superpower-of-lgbtq-advocacy/" target="_blank" class="read-more">Read Full Article →</a>
-            </article>
-
-            <article class="article">
-                <h3><a href="https://shootingtouch.wordpress.com/2022/09/09/snippets-from-my-year-in-rwanda/" target="_blank" style="color: var(--teal); text-decoration: none;">Shooting Touch Blog #5: Snippets From My Year in Rwanda</a></h3>
-                <p class="article-meta">September 9, 2022 | Shooting Touch</p>
-                <p class="article-excerpt">I still haven't quite wrapped my head around it all - leaving Rwanda, working at BWB, traveling, returning home - but at the moment, I just feel immense gratitude for the chance to explore the world, meet some of NBA's top coaches and executives, and to engage with the next generation of African basketball stars.</p>
-                <a href="https://shootingtouch.wordpress.com/2022/09/09/snippets-from-my-year-in-rwanda/" target="_blank" class="read-more">Read Full Article →</a>
-            </article>
-
-            <article class="article">
-                <h3><a href="https://shootingtouch.wordpress.com/2022/06/04/whirlwind/" target="_blank" style="color: var(--teal); text-decoration: none;">Shooting Touch Blog #4: Whirlwind</a></h3>
-                <p class="article-meta">June 4, 2022 | Shooting Touch</p>
-                <p class="article-excerpt">In a given week, you'll find me driving around Rwanda in an old broken-down Rav4 that was imported from Ottawa, meeting fascinating people from all over the world, organizing Shooting Touch programs, guiding guests around the country, exploring natural wonders, and hooping every chance I get.</p>
-                <a href="https://shootingtouch.wordpress.com/2022/06/04/whirlwind/" target="_blank" class="read-more">Read Full Article →</a>
-            </article>
-
-            <article class="article">
-                <h3><a href="https://shootingtouch.wordpress.com/2022/03/24/this-isnt-about-me/" target="_blank" style="color: var(--teal); text-decoration: none;">Shooting Touch Blog #3: This Isn't About Me</a></h3>
-                <p class="article-meta">March 24, 2022 | Shooting Touch</p>
-                <p class="article-excerpt">This isn't about me. Or any of the Shooting Touch Rwanda Fellows, or even Shooting Touch. It's about the women who have to strategize every day in order to survive, keep their children healthy, manage their homes, businesses, crops, or livestock, and play basketball with their friends when the work is done.</p>
-                <a href="https://shootingtouch.wordpress.com/2022/03/24/this-isnt-about-me/" target="_blank" class="read-more">Read Full Article →</a>
-            </article>
-
-            <article class="article">
-                <h3><a href="https://shootingtouch.wordpress.com/2022/02/09/change-of-pace/" target="_blank" style="color: var(--teal); text-decoration: none;">Shooting Touch Blog #2: Change of Pace</a></h3>
-                <p class="article-meta">February 11, 2022 | Shooting Touch</p>
-                <p class="article-excerpt">When I arrived in Kigali on January 10, basketball was still banned, and Shooting Touch courts were empty. I had no idea when the regulations might shift in our favor, and I was unsure how my fellowship would proceed without the ability play the beautiful game. Then, miraculously, our whole situation changed.</p>
-                <a href="https://shootingtouch.wordpress.com/2022/02/09/change-of-pace/" target="_blank" class="read-more">Read Full Article →</a>
-            </article>
-
-            <div style="text-align: center; margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px solid var(--light-gray);">
-                <a href="writing.html" style="display: inline-block; padding: 0.9rem 1.8rem; background: var(--purple); color: white; text-decoration: none; border-radius: 4px; font-weight: 600; transition: all 0.2s ease;" onmouseover="this.style.background='var(--teal)'" onmouseout="this.style.background='var(--purple)'">Explore Full Writing Portfolio →</a>
             </div>
         </div>
     </section>
